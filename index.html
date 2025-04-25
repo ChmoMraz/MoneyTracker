@@ -104,19 +104,31 @@
         body.dark-theme {
             background-color: #121212;
             color: #ffffff;
+            --table-border: #686868;
+            --th-bg: #333333;
         }
 
         body.dark-theme .navbar {
             background-color: #1e1e1e;
+            --table-border: #686868;
+        }
+        .dark-theme {
+        --table-border: #686868;
+        --th-bg: #333333;
         }
         #transactions-table{
+            border: 1px solid var(--table-border);
             border-collapse: separate;
             border-spacing: 20px 5px;
+            border-radius: 10px;
         }
         #transactions-table th,
         #transactions-table td {
+            
         padding: 4px; 
-    }
+        
+        }
+
     </style>
 </head>
 <body>
@@ -144,7 +156,7 @@
             <div class="main-content">
                 <!-- History view will be inserted here -->
                 <div id="history-container">
-                    <table id="transactions-table" width="100%">
+                    <table id="transactions-table" width="100%" style="border: 1px solid black">
                         <thead>
                             <tr>
                                 <th>Дата</th>
