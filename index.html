@@ -16,7 +16,6 @@
             color: #1d1d1f;
         }
 
-        /* Контейнеры страниц */
         .page {
             display: none;
             flex: 1;
@@ -48,6 +47,10 @@
         
         /* Навигация */
         .navbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
             display: flex;
             justify-content: space-around;
             background: #fff;
@@ -67,7 +70,6 @@
             color: white;
         }
 
-        /* Стили для истории покупок (ваши существующие) */
         .purchase-history {
             max-width: 600px;
             margin: 0 auto;
@@ -93,6 +95,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 12px;
+
         }
 
         .store-name {
@@ -262,7 +265,6 @@
             }
         }
 
-        // Инициализация приложения
         new App();
     </script>
 </body>
